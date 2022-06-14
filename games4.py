@@ -1,17 +1,22 @@
+#function untuk 3 games
 import random
 #permainan pertama teka nombor
 def tekanombor():
 #tajuk pilihan pertama
     print("***TEKA NOMBOR***")
 
-    #penggunaan module random
+    #penggunaan module random randint
     x=random.randint(1,10)
+    #setkan variable guess kepada tiada nilai
     guess=None
-
+    
+    #setkan ulangan 
     while x!=guess:
-
+        
+        #pengguna memasukkan nilai yang diteka jenis data integer dan disimpan dalam pembolehubah guess       
         guess=int(input("Pilih nombor antara 1 hingga 10: "))
 
+        #penggunaan struktur kawalan if elif 
         if x==guess:
             print("Anda hebat!")
         elif x>guess:
@@ -22,7 +27,8 @@ def tekanombor():
 #permainan kedua teka huruf
 def tekahuruf():
     print("***TEKA HURUF***")
-
+    
+    #penggunaan module random choice dengan setkan variable y dengan character USTP
     y="USTP"
     x=random.choice(y)
     guess=None
